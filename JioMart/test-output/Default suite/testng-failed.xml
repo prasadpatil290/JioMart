@@ -8,9 +8,9 @@
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
           <include name="afterclass"/>
+          <include name="DD1"/>
           <include name="afterTest"/>
           <include name="openBrowser"/>
-          <include name="byju"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- HomePage.Dropdown1TestCrossB -->
