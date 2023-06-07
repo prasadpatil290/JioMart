@@ -43,6 +43,7 @@ public class Dropdown1Test {
 			driver = new ChromeDriver(options);       
 			driver.manage().timeouts().pageLoadTimeout(100,TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.manage().timeouts().setScriptTimeout(30, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 		}
 		

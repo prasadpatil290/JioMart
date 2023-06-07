@@ -10,7 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Dropdown1 {
-	
+		WebDriver driver;
 		Actions act;
 	
 	//Step 1 : Declaration of variable globally (data members)
@@ -25,27 +25,23 @@ public class Dropdown1 {
 		
 		public Dropdown1(WebDriver driver) throws InterruptedException { 
 			PageFactory.initElements(driver,this);
-			Thread.sleep(2000);
+			this.driver = driver;
 			act = new Actions(driver);
+
+		}
+		
+		//Step 3 : Method creation
+		public void Grocerie() throws InterruptedException {
+			Thread.sleep(2000);
 			System.out.println("==========="+Groceries.getText()+"========");
-			act.moveToElement(Groceries).build().perform();
+			act.moveToElement(Groceries).build().perform();		}
+		
+		public void listt() throws InterruptedException {
 			for(WebElement e : list) {
 				Thread.sleep(300);
 				act.moveToElement(e).build().perform();
 				System.out.println(e.getText());
 			}
 			Thread.sleep(2000);
-		}
-		
-		//Step 3 : Method creation
-		public void Grocerie() throws InterruptedException {
-			Thread.sleep(300);
-		}
-		
-		public void listt() throws InterruptedException {
-//			for(WebElement e : list) {
-				Thread.sleep(300);
-//				act.moveToElement(e).build().perform();
-//				System.out.println(e.getText());
 			}
 	}

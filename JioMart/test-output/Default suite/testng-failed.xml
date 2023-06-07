@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HomePage.Dropdown1Test">
+      <class name="HomePage.Dropdown1TestCrossB">
         <methods>
-          <include name="beforeClass"/>
-          <include name="DD1"/>
           <include name="beforeMethod"/>
+          <include name="beforeClass"/>
           <include name="afterclass"/>
+          <include name="afterTest"/>
+          <include name="openBrowser"/>
+          <include name="byju"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- HomePage.Dropdown1Test -->
+      </class> <!-- HomePage.Dropdown1TestCrossB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
