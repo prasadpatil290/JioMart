@@ -1,0 +1,21 @@
+package Prameterization;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+public class Numericvalue {
+	
+public static void main(String[] args) throws EncryptedDocumentException, IOException {
+		
+	FileInputStream file = new FileInputStream("C:\\Users\\ramko\\eclipse-workspace\\RamProject\\bin\\Prameterization\\Book1.xlsx");
+	
+	//To fetch Numeric value 
+	
+	double data1 = WorkbookFactory.create(file).getSheet("sheet1").getRow(0).getCell(1).getNumericCellValue();
+	System.out.println(data1);
+	
+	}
+}
