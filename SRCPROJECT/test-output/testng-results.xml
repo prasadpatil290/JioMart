@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-17T18:35:58Z" name="Default suite" finished-at="2023-06-17T18:36:35Z" duration-ms="37150">
+    <groups>
+    </groups>
+    <test started-at="2023-06-17T18:35:58Z" name="Default test" finished-at="2023-06-17T18:36:35Z" duration-ms="37150">
+      <class name="TestingKhsn.TestNG">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TestingKhsn.TestNG@2b30a42c]" started-at="2023-06-17T18:35:58Z" name="beforeClass" finished-at="2023-06-17T18:36:05Z" duration-ms="7686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestingKhsn.TestNG@2b30a42c]" started-at="2023-06-17T18:36:05Z" name="beforeMethod" finished-at="2023-06-17T18:36:07Z" duration-ms="1064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="profile()[pri:0, instance:TestingKhsn.TestNG@2b30a42c]" started-at="2023-06-17T18:36:07Z" name="profile" finished-at="2023-06-17T18:36:17Z" duration-ms="10218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profile -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestingKhsn.TestNG@2b30a42c]" started-at="2023-06-17T18:36:17Z" name="afterMethod" finished-at="2023-06-17T18:36:18Z" duration-ms="1249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestingKhsn.TestNG@2b30a42c]" started-at="2023-06-17T18:36:18Z" name="beforeMethod" finished-at="2023-06-17T18:36:30Z" duration-ms="11572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="teacher()[pri:0, instance:TestingKhsn.TestNG@2b30a42c]" started-at="2023-06-17T18:36:30Z" name="teacher" finished-at="2023-06-17T18:36:34Z" duration-ms="4179" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.khanacademy.org/profile/me/teacher] but found [https://www.khanacademy.org/profile/me/teachers]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.khanacademy.org/profile/me/teacher] but found [https://www.khanacademy.org/profile/me/teachers]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at TestingKhsn.TestNG.teacher(TestNG.java:60)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teacher -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestingKhsn.TestNG@2b30a42c]" started-at="2023-06-17T18:36:34Z" name="afterMethod" finished-at="2023-06-17T18:36:35Z" duration-ms="956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:TestingKhsn.TestNG@2b30a42c]" started-at="2023-06-17T18:36:35Z" name="afterclass" finished-at="2023-06-17T18:36:35Z" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+      </class> <!-- TestingKhsn.TestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
